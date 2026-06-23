@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soundings - Claire Callagy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/soundings.css">
-    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/components.js" defer></script>
     <script src="js/soundings.js" defer></script>
-    <script src="js/lightbox.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -29,110 +29,97 @@
         </header>
 
         <main class="soundings">
-            <!-- 1 -->
-            <div class="soundings-row single">
-                <figure class="soundings-item" data-category="soundings">
-                    <img src="images/soundings/stonewall.jpg" alt="Stonewall">
-                    <figcaption>Stonewall, 30x30"</figcaption>
-                </figure>
+            <div class="swiper soundings-carousel">
+                <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="swiper-slide" data-caption="Stonewall, 30x30&quot;">
+                        <figure class="soundings-item">
+                            <img src="images/soundings/stonewall.jpg" alt="Stonewall" width="2000" height="2000">
+                        </figure>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide" data-caption="Shallow Waters, 15x20&quot;">
+                        <figure class="soundings-item">
+                            <img src="images/soundings/shallow-waters.jpg" alt="Shallow Waters" width="1500" height="2000">
+                        </figure>
+                    </div>
+                    <!-- 3 (pair) -->
+                    <div class="swiper-slide" data-caption="Aquinnah, 40.5x60&quot; / Shoreline, 15x20&quot;">
+                        <div class="soundings-pair">
+                            <figure class="soundings-item">
+                                <img src="images/soundings/aquinnah.jpg" alt="Aquinnah" width="2000" height="1310">
+                            </figure>
+                            <figure class="soundings-item">
+                                <img src="images/soundings/shoreline.jpg" alt="Shoreline" width="1500" height="2000">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="swiper-slide" data-caption="Painted House, 30x30&quot;">
+                        <figure class="soundings-item">
+                            <img src="images/soundings/painted-house.jpg" alt="Painted House" width="2000" height="1500">
+                        </figure>
+                    </div>
+                    <!-- 5 (pair) -->
+                    <div class="swiper-slide" data-caption="Noman's I, 14x14&quot; / Liquid Glass, 15x20&quot;">
+                        <div class="soundings-pair">
+                            <figure class="soundings-item">
+                                <img src="images/soundings/nomans-1.jpg" alt="Noman's I" width="2000" height="2000">
+                            </figure>
+                            <figure class="soundings-item">
+                                <img src="images/soundings/liquid-glass.jpg" alt="Liquid Glass" width="1500" height="2000">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="swiper-slide" data-caption="Dune, 30x30&quot;">
+                        <figure class="soundings-item">
+                            <img src="images/soundings/dune.jpg" alt="Dune" width="2000" height="2000">
+                        </figure>
+                    </div>
+                    <!-- 7 -->
+                    <div class="swiper-slide" data-caption="Shorebreak, 26.25x35&quot;">
+                        <figure class="soundings-item">
+                            <img src="images/soundings/shorebreak.jpg" alt="Shorebreak" width="2000" height="1500">
+                        </figure>
+                    </div>
+                    <!-- 8 -->
+                    <div class="swiper-slide" data-caption="Squibnocket, 18x24&quot;">
+                        <figure class="soundings-item">
+                            <img src="images/soundings/squibnocket.jpg" alt="Squibnocket" width="2000" height="1500">
+                        </figure>
+                    </div>
+                    <!-- 9 (pair) -->
+                    <div class="swiper-slide" data-caption="Shorebirds, 18x18&quot; / After the Storm, 18x24&quot;">
+                        <div class="soundings-pair">
+                            <figure class="soundings-item">
+                                <img src="images/soundings/shorebirds.jpg" alt="Shorebirds" width="2000" height="2000">
+                            </figure>
+                            <figure class="soundings-item">
+                                <img src="images/soundings/after-the-storm.jpg" alt="After the Storm" width="2000" height="1500">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="swiper-slide" data-caption="Noman's II, 14x14&quot;">
+                        <figure class="soundings-item">
+                            <img src="images/soundings/nomans-2.jpg" alt="Noman's II" width="2000" height="2000">
+                        </figure>
+                    </div>
+                    <!-- 11 -->
+                    <div class="swiper-slide" data-caption="Blue, 30x30&quot;">
+                        <figure class="soundings-item">
+                            <img src="images/soundings/blue.jpg" alt="Blue" width="2000" height="2000">
+                        </figure>
+                    </div>
+                </div>
             </div>
 
-            <!-- 2 -->
-            <div class="soundings-row single">
-                <figure class="soundings-item portrait" data-category="soundings">
-                    <img src="images/soundings/shallow-waters.jpg" alt="Shallow Waters">
-                    <figcaption>Shallow Waters, 15x20"</figcaption>
-                </figure>
-            </div>
-
-            <!-- 3 -->
-            <div class="soundings-row pair">
-                <figure class="soundings-item" data-category="soundings">
-                    <img src="images/soundings/aquinnah.jpg" alt="Aquinnah">
-                    <figcaption>Aquinnah, 40.5x60"</figcaption>
-                </figure>
-                <figure class="soundings-item portrait" data-category="soundings">
-                    <img src="images/soundings/shoreline.jpg" alt="Shoreline">
-                    <figcaption>Shoreline, 15x20"</figcaption>
-                </figure>
-            </div>
-
-            <!-- 4 -->
-            <div class="soundings-row single">
-                <figure class="soundings-item" data-category="soundings">
-                    <img src="images/soundings/painted-house.jpg" alt="Painted House">
-                    <figcaption>Painted House, 30x30"</figcaption>
-                </figure>
-            </div>
-
-            <!-- 5 -->
-            <div class="soundings-row pair">
-                <figure class="soundings-item" data-category="soundings">
-                    <img src="images/soundings/nomans-1.jpg" alt="Noman's I">
-                    <figcaption>Noman's I, 14x14"</figcaption>
-                </figure>
-                <figure class="soundings-item portrait" data-category="soundings">
-                    <img src="images/soundings/liquid-glass.jpg" alt="Liquid Glass">
-                    <figcaption>Liquid Glass, 15x20"</figcaption>
-                </figure>
-            </div>
-
-            <!-- 6 -->
-            <div class="soundings-row single">
-                <figure class="soundings-item" data-category="soundings">
-                    <img src="images/soundings/dune.jpg" alt="Dune">
-                    <figcaption>Dune, 30x30"</figcaption>
-                </figure>
-            </div>
-
-            <!-- 7 -->
-            <div class="soundings-row single">
-                <figure class="soundings-item wide" data-category="soundings">
-                    <img src="images/soundings/shorebreak.jpg" alt="Shorebreak">
-                    <figcaption>Shorebreak, 26.25x35"</figcaption>
-                </figure>
-            </div>
-
-            <!-- 8 -->
-            <div class="soundings-row single">
-                <figure class="soundings-item wide" data-category="soundings">
-                    <img src="images/soundings/squibnocket.jpg" alt="Squibnocket">
-                    <figcaption>Squibnocket, 18x24"</figcaption>
-                </figure>
-            </div>
-
-            <!-- 9 -->
-            <div class="soundings-row pair">
-                <figure class="soundings-item" data-category="soundings">
-                    <img src="images/soundings/shorebirds.jpg" alt="Shorebirds">
-                    <figcaption>Shorebirds, 18x18"</figcaption>
-                </figure>
-                <figure class="soundings-item" data-category="soundings">
-                    <img src="images/soundings/after-the-storm.jpg" alt="After the Storm">
-                    <figcaption>After the Storm, 18x24"</figcaption>
-                </figure>
-            </div>
-
-            <!-- 10 -->
-            <div class="soundings-row single">
-                <figure class="soundings-item" data-category="soundings">
-                    <img src="images/soundings/nomans-2.jpg" alt="Noman's II">
-                    <figcaption>Noman's II, 14x14"</figcaption>
-                </figure>
-            </div>
-
-            <!-- 11 -->
-            <div class="soundings-row single">
-                <figure class="soundings-item" data-category="soundings">
-                    <img src="images/soundings/blue.jpg" alt="Blue">
-                    <figcaption>Blue, 30x30"</figcaption>
-                </figure>
+            <div class="soundings-meta">
+                <p class="soundings-caption"></p>
+                <p class="soundings-counter"></p>
             </div>
         </main>
-
-        <footer class="site-footer">
-            <p>© 2025 Claire Callagy</p>
-        </footer>
     </div>
 </body>
 </html>

@@ -5,6 +5,14 @@
   letter-spacing: 0.01em;
 }
 
+/* Wordmark — uppercase with generous tracking for a bit of character */
+.gallery-info .type-heading {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+}
+
 h2.type-heading {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 300;
