@@ -70,8 +70,7 @@
   justify-content: space-between;
   padding: 0 2rem;
   pointer-events: none;
-  mix-blend-mode: difference;
-  color: white;
+  color: #405A6B;
 }
 
 .soundings-caption,
