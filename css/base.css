@@ -330,12 +330,14 @@ body.theme-dark .mobile-menu {
   margin-top: 2rem;
 }
 
-/* "CONTACT + PRINT INQUIRIES" — uppercase, sized + tracked like the wordmark */
-.contact-info h2 {
+/* "CONTACT + PRINT INQUIRIES" — sized + tracked like the nav links
+   (SOUNDINGS / LIFESTYLE / ABOUT). The h2.type-heading qualifier beats the
+   1.5rem h2.type-heading rule in typography.css. */
+.contact-info h2.type-heading {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 0.85rem;
-  letter-spacing: 0.42em;
+  letter-spacing: 0.15em;
   margin-bottom: 1rem;
 }
 
