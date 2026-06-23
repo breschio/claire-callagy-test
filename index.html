@@ -3,64 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claire Callagy Photography</title>
+    <title>Claire Callagy</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/typography.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-    <script src="js/app.js" defer></script>
-    <script src="js/gallery.js" defer></script>
-    <script src="js/menu.js" defer></script>
-    <script src="js/components.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <script src="js/lightbox.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="theme-light">
-    <div class="container">
-        <div class="gallery-info">
-            <h1 class="type-heading"><a href="index.html">Claire Callagy</a></h1>
+    <!-- Entire splash is a link into the site, landing on SOUNDINGS -->
+    <a class="splash" href="soundings.html" aria-label="Enter — Claire Callagy">
+        <video id="splash-video" class="splash-video" autoplay muted loop playsinline preload="auto"></video>
+        <div class="splash-overlay">
+            <h1 class="splash-title">CLAIRE CALLAGY</h1>
         </div>
-
-        <main class="home">
-            <div class="gallery-container">
-                <!-- Landscape Images -->
-                <div class="gallery-image active" data-category="landscape">
-                    <img src="images/landscape/landscape-1.jpg" alt="Martha's Vineyard landscape">
-                </div>
-                <div class="gallery-image" data-category="landscape">
-                    <img src="images/landscape/landscape-2.jpg" alt="Martha's Vineyard landscape">
-                </div>
-                <div class="gallery-image" data-category="landscape">
-                    <img src="images/landscape/landscape-3.jpg" alt="Martha's Vineyard landscape">
-                </div>
-                <div class="gallery-image" data-category="landscape">
-                    <img src="images/landscape/landscape-4.jpg" alt="Martha's Vineyard landscape">
-                </div>
-                <div class="gallery-image" data-category="landscape">
-                    <img src="images/landscape/landscape-5.jpg" alt="Martha's Vineyard landscape">
-                </div>
-
-                <!-- Lifestyle Images -->
-                <div class="gallery-image" data-category="lifestyle">
-                    <img src="images/lifestyle/lifestyle-1.jpg" alt="Martha's Vineyard lifestyle">
-                </div>
-                <div class="gallery-image" data-category="lifestyle">
-                    <img src="images/lifestyle/lifestyle-2.jpg" alt="Martha's Vineyard lifestyle">
-                </div>
-                <div class="gallery-image" data-category="lifestyle">
-                    <img src="images/lifestyle/lifestyle-3.jpg" alt="Martha's Vineyard lifestyle">
-                </div>
-                <div class="gallery-image" data-category="lifestyle">
-                    <img src="images/lifestyle/lifestyle-4.jpg" alt="Martha's Vineyard lifestyle">
-                </div>
-                <div class="gallery-image" data-category="lifestyle">
-                    <img src="images/lifestyle/lifestyle-5.jpg" alt="Martha's Vineyard lifestyle">
-                </div>
-            </div>
-        </main>
-        <footer class="site-footer">
-            <p>© 2025 Claire Callagy</p>
-        </footer>
-    </div>
+    </a>
+    <script src="js/splash.js"></script>
 </body>
-</html> 
+</html>

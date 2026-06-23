@@ -62,7 +62,7 @@ class Lightbox {
         });
 
         // Bind click events to all gallery images
-        document.querySelectorAll('.masonry-item img, .gallery-image img').forEach(img => {
+        document.querySelectorAll('.masonry-item img, .gallery-image img, .soundings-item img').forEach(img => {
             img.addEventListener('click', () => this.open(img));
         });
     }

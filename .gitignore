@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Source media (not for deployment — keep originals locally)
+*.MOV
+.documents/
+images/soundings/_originals/

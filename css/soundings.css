@@ -1,0 +1,91 @@
+/* SOUNDINGS — centered single/paired scroll layout */
+
+.soundings {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 11rem;
+  padding-bottom: 8rem;
+}
+
+.soundings-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: clamp(4rem, 9vw, 9rem);
+}
+
+.soundings-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Figures */
+.soundings-item {
+  margin: 0;
+}
+
+.soundings-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1.2s ease-out;
+}
+
+.soundings-item img.loaded {
+  opacity: 1;
+}
+
+.soundings-item figcaption {
+  margin-top: 0.85rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  opacity: 0.8;
+}
+
+/* Single images — width tuned per orientation */
+.soundings-row.single .soundings-item {
+  width: 100%;
+  max-width: 640px;
+}
+
+.soundings-row.single .soundings-item.portrait {
+  max-width: 520px;
+}
+
+.soundings-row.single .soundings-item.wide {
+  max-width: 880px;
+}
+
+/* Paired images — sit side by side, comparable height, top-aligned */
+.soundings-row.pair {
+  gap: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.soundings-row.pair .soundings-item img {
+  width: auto;
+  height: auto;
+  max-height: 56vh;
+  max-width: 46vw;
+}
+
+/* Mobile — pairs stack into the single column */
+@media (max-width: 768px) {
+  .soundings {
+    padding-top: 9rem;
+  }
+
+  .soundings-row.pair {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(4rem, 12vw, 6rem);
+  }
+
+  .soundings-row.pair .soundings-item img {
+    width: 100%;
+    max-width: 520px;
+    max-height: none;
+  }
+}
