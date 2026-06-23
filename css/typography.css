@@ -5,12 +5,12 @@
   letter-spacing: 0.01em;
 }
 
-/* Wordmark — uppercase with generous tracking for a bit of character */
+/* Wordmark — uppercase with the same generous tracking as the splash title */
 .gallery-info .type-heading {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 0.85rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.42em;
 }
 
 h2.type-heading {

@@ -2,7 +2,11 @@
 
 .soundings {
   height: 100vh;
-  margin: 0;
+  /* Full-bleed: break out of the centered, max-width:1800px .container so
+     each slide is the full viewport width. Otherwise wide slides (esp. the
+     side-by-side pairs) overflow the capped slide and bleed into neighbors. */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   padding: 0;
 }
 
@@ -11,12 +15,14 @@
   width: 100%;
 }
 
-/* One slide fills the view; the image is centered within it at a fixed height */
+/* One slide fills the view; the image is centered within it at a fixed height.
+   overflow:hidden clips content to its own slide so neighbors never peek in. */
 .soundings-carousel .swiper-slide {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .soundings-item {
